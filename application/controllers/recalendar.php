@@ -20,7 +20,7 @@ class Recalendar extends CI_Controller {
 			$events = $this->gcal->listEvents(array(
 			'ispublic' => false,  // defaults to false
 			'calendarId' => $this->input->post('email'),   // required
-			'redirectURI' => 'http://localhost:8080/recalendar/index.php/recalendar/get_data'  // defaults to the URL of the current page
+			'redirectURI' => 'your redirect uri'  // defaults to the URL of the current page
 	
 			));
 			echo '<pre>';
